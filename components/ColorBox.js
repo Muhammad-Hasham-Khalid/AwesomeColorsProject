@@ -12,10 +12,7 @@ const ColorBox = ({ colorName, hexCode }) => {
   };
 
   return (
-    <View
-      //
-      style={[styles.box, boxColor]}
-    >
+    <View style={[styles.box, boxColor]}>
       <Text style={[styles.boxText, textColor]}>
         {colorName}: {hexCode}
       </Text>
