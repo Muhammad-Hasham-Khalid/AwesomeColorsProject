@@ -8,9 +8,7 @@ import {
 } from 'react-native';
 
 const PalettePreview = ({ paletteName, colors, onPress }) => {
-  const colorsSliced = colors.slice(0, 3);
-
-  console.log(colorsSliced);
+  const colorsSliced = colors.slice(0, 5);
 
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
@@ -37,8 +35,8 @@ const styles = StyleSheet.create({
     fontSize: 17,
   },
   color: {
-    width: 50,
-    height: 50,
+    width: 30,
+    height: 30,
     margin: 5,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
